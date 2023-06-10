@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>《Among Us》</title>
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+    <article>
+    <section class="container">
+        <div class="square">
+            <div class="info">
+                <p>《Among Us》</p>
+                <div class="picture">
+                    <img src="image/11main.jpg" alt="Slide 1" style="height: 320px; width: 550px;">
+                </div>
+            </div>
+        </div>
+        <div class="square3">
+            <div class="select"> <input type="button" value="以 $110 購買《Among Us》" name="按鈕名稱" style="--cir:#00ccff;--i:1;width:400px;height:150px;" class="btn"></div><br><br>
+            <div class="gift"> <input type="button" value="加入購物車" name="按鈕名稱" style="--cir:#00ccff;--i:1;width:400px;height:150px;" class="btn"></div>
+        </div>
+    </section>
+    <br>
+    <div class="word">實體遊戲畫面</div>
+    <br>
+    <div class="gallery">
+      <img src="image/111.png" alt="Image 1" onclick="showImage('image/111.png')">
+      <img src="image/112.jpg" alt="Image 2" onclick="showImage('image/112.jpg')">
+      <img src="image/113.jpg" alt="Image 3" onclick="showImage('image/113.jpg')">
+      <img src="image/114.jpg" alt="Image 4" onclick="showImage('image/114.jpg')">
+    </div>
+    <div class="overlay2" onclick="hideImage()">
+        <img id="overlayImage" src="" alt="放大圖片">
+    </div>
+      <script>
+        function showImage(imageSrc) {
+          var overlay = document.querySelector('.overlay2');
+          var overlayImage = document.getElementById('overlayImage');
+          overlay.style.display = 'flex';
+          overlayImage.src = imageSrc;
+        }
+        function hideImage() {
+          var overlay = document.querySelector('.overlay2');
+          overlay.style.display = 'none';
+        }
+      </script>
+      <img src="image/15+.png" alt="" class="age">
+      <br>
+      <br>
+      <div class="word">遊戲介紹</div>
+      <p class="words">
+            完成任務讓船隻準備好啟程或是逐出所有偽裝者來獲得勝利。
+            快速應對以修復偽裝者造成的破壞。
+            檢查管理室地圖和保全攝影機以密切關注其他船員的動態。
+            發現屍體時立即回報，以開始討論誰可能是偽裝者。
+            召開緊急會議來針對可疑的行動進行討論。
+            投票逐出推測是偽裝者的人。
+        
+            殺死船員並嫁禍給旁觀者。
+            假裝執行任務以融入船員之中。
+            利用通風口在船上隱密地快速移動。
+            搞破壞來製造混亂並分化船員。
+            關門以困住受害者並悄悄將其殺害。
+         
+    </p>
+      <div class="word">配備需求</div>
+      <div class="equipment">
+        <div class="square4">
+            最低配備:<br><br>
+            <ul>
+            <li>需要 64 位元的處理器及作業系統</li>
+            <li>作業系統: 64-bit Windows 10</li> 
+            <li>處理器:Intel Core i5-4430 / AMD FX-6300</li> 
+            <li>記憶體: 8 GB 記憶體</li>  
+            <li>顯示卡:NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</li>
+            <li>DirectX: 版本：11</li>
+            <li>網路: 寬頻網際網路連線</li>
+            <li>儲存空間: 40 GB 可用空間</li>
+           </ul>
+        </div>
+        <div class="square5">
+            建議配備:<br><br>
+            <ul>
+                <li>需要 64 位元的處理器及作業系統</li>
+                <li>作業系統: 64-bit Windows 10</li> 
+                <li>處理器:Intel Core i5-6600K / AMD Ryzen 5 1600 </li> 
+                <li>記憶體: 16 GB 記憶體</li>  
+                <li>顯示卡:NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</li>
+                <li>DirectX: 版本：11</li>
+                <li>網路: 寬頻網際網路連線</li>
+                <li>儲存空間: 50 GB 可用空間</li>
+            </ul>         
+        </div>
+    </div>
+    <div class="says"><br><br>
+    <div class="thought">對《Among Us》的看法</div>
+    <section class="container2">
+        <div class="picture2">
+            <img src="image/head.jpg" alt="Slide 1" style="height: 300px; width: 300px;">
+           <div class="rating">
+             <button class="star" onclick="rate(1)">&#9734;</button>
+             <button class="star" onclick="rate(2)">&#9734;</button>
+             <button class="star" onclick="rate(3)">&#9734;</button>
+             <button class="star" onclick="rate(4)">&#9734;</button>
+             <button class="star" onclick="rate(5)">&#9734;</button>
+           </div>
+           <script>
+            function rate(score) {
+                var stars = document.getElementsByClassName("star");
+                for (var i = 0; i < stars.length; i++) {
+                if (i < score) {
+                    stars[i].classList.add("active"); 
+                } else {
+                    stars[i].classList.remove("active");
+                }
+                }
+            }
+
+           </script>
+        </div>
+        <div class="square6">
+            <form action="">
+                <input type="text" name="title" size="70px"  value="標題" class="custom-textbox" ><br><br>
+                <textarea name="" id="" cols="70" rows="10" class="bg"></textarea><br><br>
+                <input type="submit" value="送出留言" class="sub">
+            </form>
+         </div>
+        </div>
+    </div>
+    </section>
+    <section class="board">
+        <div class="account-pic">
+          <img src="image/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+        </div>
+        <div class="account-info">
+         <div class="account-id">iamakid39</div>
+         <div class="stars2">
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+         </div>
+        </div>
+        <div class="posted">好玩!</div>
+    </section>
+    <section class="board">
+        <div class="account-pic">
+          <img src="image/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+        </div>
+        <div class="account-info">
+         <div class="account-id">Noelsdog</div>
+         <div class="stars2">
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2"></span>
+         </div>         
+        </div>
+        <div class="posted">還行</div>
+    </section>
+    <section class="board">
+        <div class="account-pic">
+          <img src="image/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+        </div>
+        <div class="account-info">
+         <div class="account-id">dachi</div>
+         <div class="stars2">
+               <span class="star2">&#9733</span>
+               <span class="star2"></span>
+               <span class="star2"></span>
+               <span class="star2"></span>
+               <span class="star2"></span>
+         </div>         
+        </div>
+        <div class="posted">瓦羅蘭比較好玩</div>
+    </section>
+    </article>
+    <footer>
+        Copyright ©2023 Playtopia.<br>
+    </footer>
+</body>
+</html>

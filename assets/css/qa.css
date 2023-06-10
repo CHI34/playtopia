@@ -1,0 +1,52 @@
+main {
+    height: 1000px;
+}
+
+.panel-control {
+    position: absolute;
+    opacity: 0;
+}
+
+.tab-group {
+    text-align: center;
+}
+
+.tab-group label {
+    display: inline-block;
+    padding: 10px 30px;
+    border-bottom: none;
+    background-color: #ccc;
+    bottom: -1px;
+    position: relative;
+}
+
+.tab-group label:hover {
+    cursor: pointer;
+}
+
+.content-group {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+#radio4:checked~.tab-group [for="radio4"],
+#radio5:checked~.tab-group [for="radio5"],
+#radio6:checked~.tab-group [for="radio6"],
+#radio7:checked~.tab-group [for="radio7"] {
+    background-color: #fff;
+}
+
+
+#radio4:checked~.content-group .content4,
+#radio5:checked~.content-group .content5,
+#radio6:checked~.content-group .content6,
+#radio7:checked~.content-group .content7 {
+    display: block
+}
+
+p {
+    font-size: 20px;
+}

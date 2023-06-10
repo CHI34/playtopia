@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>《DARK SOULS™ II黑魂》</title>
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+    <article>
+    <section class="container">
+        <div class="square">
+            <div class="info">
+                <p>《DARK SOULS™ II黑魂》</p>
+                <div class="picture">
+                    <img src="image/32main.jpg" alt="Slide 1" style="height: 320px; width: 550px;">
+                </div>
+            </div>
+        </div>
+        <div class="square3">
+            <div class="select"> <input type="button" value="以 $809 購買《DARK SOULS™ II黑魂》" name="按鈕名稱" style="--cir:#00ccff;--i:1;width:400px;height:150px;" class="btn"></div><br><br>
+            <div class="gift"> <input type="button" value="加入購物車" name="按鈕名稱" style="--cir:#00ccff;--i:1;width:400px;height:150px;" class="btn"></div>
+        </div>
+    </section>
+    <br>
+    <div class="word">實體遊戲畫面</div>
+    <br>
+    <div class="gallery">
+      <img src="image/321.jpg" alt="Image 1" onclick="showImage('image/321.jpg')">
+      <img src="image/322.jpg" alt="Image 2" onclick="showImage('image/322.jpg')">
+      <img src="image/323.jpg" alt="Image 3" onclick="showImage('image/323.jpg')">
+      <img src="image/324.jpg" alt="Image 4" onclick="showImage('image/324.jpg')">
+    </div>
+    <div class="overlay2" onclick="hideImage()">
+        <img id="overlayImage" src="" alt="放大圖片">
+    </div>
+      <script>
+        function showImage(imageSrc) {
+          var overlay = document.querySelector('.overlay2');
+          var overlayImage = document.getElementById('overlayImage');
+          overlay.style.display = 'flex';
+          overlayImage.src = imageSrc;
+        }
+        function hideImage() {
+          var overlay = document.querySelector('.overlay2');
+          overlay.style.display = 'none';
+        }
+      </script>
+      <img src="image/15+.png" alt="" class="age">
+      <br>
+      <br>
+      <div class="word">遊戲介紹</div>
+      <p class="words">由 FROM SOFTWARE 開發的 DARK SOULS™ II 是備受期待的 2011 年火爆大作《黑暗之魂》的續集。獨特的老派動作角色扮演遊戲以令人難以置信的挑戰和強烈的情感回報吸引了全球玩家的想像力。
+
+        DARK SOULS™ II 為單人和多人遊戲體驗帶來了該系列著名的晦澀和扣人心弦的遊戲創新。
+        
+        加入黑暗之旅，體驗壓倒性的敵人遭遇戰、惡魔般的危險以及只有 FROM SOFTWARE 才能提供的無情挑戰。
+        主要特徵
+        超越死亡：敢於在廣闊的世界中挑戰激烈的遊戲玩法，該遊戲由全新的引擎提供支持，以前所未有的方式推動圖形、聲音和 FX 向前發展
+        怪物和老闆的迷宮：讓自己沉浸在充滿新的扭曲怪物和致命老闆的令人費解的環境中，這些只能來自 FROM SOFTWARE 的想像力
+        感官攻擊：範圍廣泛的威脅會掠奪人類的感官和恐懼症——幻聽、眩暈、恐高症等
+        更深更暗：更複雜的定制選項提供了適合玩家風格的武器和盔甲
+        進化的多人遊戲：更新的多人遊戲系統可以改進在線互動，帶來合作和競爭遊戲
+        精緻的遊戲玩法：DARK SOULS™ II 具有流暢的動作捕捉動畫、升級的戰鬥系統、大量擴展的角色套件、更深入的自定義選項、新武器、盔甲能力以及平衡的玩家進程系統
+        
+        
+    </p>
+      <div class="word">配備需求</div>
+      <div class="equipment">
+        <div class="square4">
+            最低配備:<br><br>
+            <ul>
+            <li>需要 64 位元的處理器及作業系統</li>
+            <li>作業系統: 64-bit Windows 10</li> 
+            <li>處理器:Intel Core i5-4430 / AMD FX-6300</li> 
+            <li>記憶體: 8 GB 記憶體</li>  
+            <li>顯示卡:NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</li>
+            <li>DirectX: 版本：11</li>
+            <li>網路: 寬頻網際網路連線</li>
+            <li>儲存空間: 40 GB 可用空間</li>
+           </ul>
+        </div>
+        <div class="square5">
+            建議配備:<br><br>
+            <ul>
+                <li>需要 64 位元的處理器及作業系統</li>
+                <li>作業系統: 64-bit Windows 10</li> 
+                <li>處理器:Intel Core i5-6600K / AMD Ryzen 5 1600 </li> 
+                <li>記憶體: 16 GB 記憶體</li>  
+                <li>顯示卡:NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</li>
+                <li>DirectX: 版本：11</li>
+                <li>網路: 寬頻網際網路連線</li>
+                <li>儲存空間: 50 GB 可用空間</li>
+            </ul>         
+        </div>
+    </div>
+    <div class="says"><br><br>
+    <div class="thought">對《DARK SOULS™ II 黑魂》的看法</div>
+    <section class="container2">
+        <div class="picture2">
+            <img src="image/head.jpg" alt="Slide 1" style="height: 300px; width: 300px;">
+           <div class="rating">
+             <button class="star" onclick="rate(1)">&#9734;</button>
+             <button class="star" onclick="rate(2)">&#9734;</button>
+             <button class="star" onclick="rate(3)">&#9734;</button>
+             <button class="star" onclick="rate(4)">&#9734;</button>
+             <button class="star" onclick="rate(5)">&#9734;</button>
+           </div>
+           <script>
+            function rate(score) {
+                var stars = document.getElementsByClassName("star");
+                for (var i = 0; i < stars.length; i++) {
+                if (i < score) {
+                    stars[i].classList.add("active"); 
+                } else {
+                    stars[i].classList.remove("active");
+                }
+                }
+            }
+
+           </script>
+        </div>
+        <div class="square6">
+            <form action="">
+                <input type="text" name="title" size="70px"  value="標題" class="custom-textbox" ><br><br>
+                <textarea name="" id="" cols="70" rows="10" class="bg"></textarea><br><br>
+                <input type="submit" value="送出留言" class="sub">
+            </form>
+         </div>
+        </div>
+    </div>
+    </section>
+    <section class="board">
+        <div class="account-pic">
+          <img src="image/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+        </div>
+        <div class="account-info">
+         <div class="account-id">iamakid39</div>
+         <div class="stars2">
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+         </div>
+        </div>
+        <div class="posted">好玩!</div>
+    </section>
+    <section class="board">
+        <div class="account-pic">
+          <img src="image/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+        </div>
+        <div class="account-info">
+         <div class="account-id">Noelsdog</div>
+         <div class="stars2">
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2">&#9733</span>
+               <span class="star2"></span>
+         </div>         
+        </div>
+        <div class="posted">還行</div>
+    </section>
+    <section class="board">
+        <div class="account-pic">
+          <img src="image/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+        </div>
+        <div class="account-info">
+         <div class="account-id">dachi</div>
+         <div class="stars2">
+               <span class="star2">&#9733</span>
+               <span class="star2"></span>
+               <span class="star2"></span>
+               <span class="star2"></span>
+               <span class="star2"></span>
+         </div>         
+        </div>
+        <div class="posted">瓦羅蘭比較好玩</div>
+    </section>
+    </article>
+    <footer>
+        Copyright ©2023 Playtopia.<br>
+    </footer>
+</body>
+</html>

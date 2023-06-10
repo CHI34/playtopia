@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+
+    <main>
+        <div class="adjust2">
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="image/11main.jpg" loading="lazy" alt="Slide 1" style="height: 100%; width: 55%;">
+                </div>
+                <div class="slide">
+                    <img src="image/21main.jpg" loading="lazy" alt="Slide 2" style="height: 100%; width: 55%;">
+                </div>
+                <div class="slide">
+                    <img src="image/31main.jpg" loading="lazy" alt="Slide 3" style="height: 100%; width: 55%;">
+                </div>
+            </div>
+                <div class="dots-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            <script src="js/index.js"> </script>
+        </div>
+       
+
+        <article>
+            <section class="first">
+                <h1>新品上市</h1>
+                <div class="array">
+                    <div class="item">
+                        <img src="image/15main.jpg" loading="lazy" style="height: 230px; width: 350px;">
+                        <div class="overlay"></div>
+                        <div class="caption"><a href="game15.html">點擊購買</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="image/26main.jpg" loading="lazy"  style="height: 230px; width: 350px;">
+                        <div class="overlay"></div>
+                        <div class="caption"><a href="game26.html">點擊購買</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="image/34main.png" loading="lazy"  style="height: 230px; width: 350px;">
+                        <div class="overlay"></div>
+                        <div class="caption"><a href="game34.html">點擊購買</a></div>
+                    </div>
+                </div>
+                <h1>暢銷商品</h1>
+                <div class="array">
+                    <div class="item">
+                        <img src="image/11main.jpg" loading="lazy" style="height: 230px; width: 350px;">
+                        <div class="overlay"></div>
+                        <div class="caption"><a href="game11.html">點擊購買</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="image/21main.jpg"  loading="lazy" style="height: 230px; width: 350px;">
+                        <div class="overlay"></div>
+                        <div class="caption"><a href="game21.html">點擊購買</a></div>
+                        
+                    </div>
+                    <div class="item">
+                        <img src="image/31main.jpg" loading="lazy" style="height: 230px; width: 350px;">
+                        <div class="overlay"></div>
+                        <div class="caption"><a href="game31.html">點擊購買</a></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="midpage">
+                    <div class="midpage2">
+                        <button type="submit" class="midpageButton" onclick="location.href='qa.html'">
+                            <i class="fa-solid fa-tag"></i>
+                        </button>
+                        <div class="midfont">問題Q&A</div>
+                    </div>
+                    <div class="midpage2">
+                        <button type="submit" class="midpageButton" onclick="location.href='member.html'">
+                            <i class="fa-solid fa-crown"></i>
+                        </button>
+                        <div class="midfont">會員中心</div>
+                    </div>
+                    <div class="midpage2">
+                        <button type="submit" class="midpageButton" onclick="location.href='aboutus.html'">
+                            <i class="fa-solid fa-users"></i>
+                        </button>
+                        <div class="midfont">關於我們</div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="adv">
+                <div class="ad1">
+                    <img src="image/21ad.jpg" loading="lazy" style="height: 800px;width: 100%;">
+                    <div class="ad_font">
+                        <div class="ad_a1"><br>APEX 英雄</div>
+                        <div class="ad_a2">選擇你的角色、 召集你的小隊、 <br>讓大家見識英雄們的實力</div>
+                        <div class="ad_a3">
+                            <input type="button" onclick="location.href='game21.html'" value="立即購買" name="" style="width:120px;height:50px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="ad2_1">
+                    <div class="ad_a1"><br><br>Overcooked! 2</div>
+                    <div class="ad_a2"><br>最多可與4位好友一起享受!<br>快來拯救混亂的廚房吧!</div>
+                    <div class="ad_a3">
+                        <input type="button" onclick="location.href='game12.html'" value="立即購買" name="" style="width:120px;height:50px;">
+                    </div>
+                </div>
+                <div class="ad2_2">
+                    <img src="image/12ad.jpg" loading="lazy" style="height: 600px;width: 100%;">
+                </div>
+                <div class="ad3_1">
+                    <img src="image/34ad.png" loading="lazy" style="height: 700px;width: 100%;">
+                </div>
+                <div class="ad3_2">
+                    <div class="ad_a1"><br><br>MONSTER HUNTER RISE</div>
+                    <div class="ad_a2">為狩獵掀起全新風潮、<br>無拘無束地躍動的動作；<br>可隨心所欲地奔馳的新原野；<br>帶來未知的興奮和驚喜的全新魔物。</div>
+                    <div class="ad_a3">
+                        <input type="button" onclick="location.href='game34.html'" value="立即購買" name="" style="width:120px;height:50px;">
+                    </div>
+                </div>
+                <div class="ad4">
+                    <img src="image/25ad.jpg" loading="lazy" style="height: 700px;width: 100%;">
+                    <div class="ad_font">
+                        <div class="ad_a1"><br>Titanfall</div>
+                        <div class="ad_a2">鐵馭具有無與倫比的機動性<br>以及召喚高大泰坦機甲的能力，<br>是新進化而來的戰鬥者。</div>
+                        <div class="ad_a3">
+                            <input type="button" onclick="location.href='game25.html'" value="立即購買" name="" style="width:120px;height:50px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div class="clear-fix"></div>
+    <footer>
+        Copyright ©2023 Playtopia.<br>
+    </footer>
+</body>
+</html>

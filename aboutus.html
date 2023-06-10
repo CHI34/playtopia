@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+    <div class="about"> 關於我們</div>
+   <div class="us_pic"> <img src="image/us_.jpg" alt="" style="height: 90%; width: 90%;"></div>
+    <article class="us">
+    <div class="us_content">
+        <div class="cycuim">資管二乙 前端</div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="image">
+                    <img src="image/fu.jpg" style="height: 450px; width: 280px;">
+                </div>
+                <div class="overlay">
+                    <div class="name">傅苡<br>這學期的課程讓我體驗到了在前端的角度做出網站的樂趣，學會了如何使用各種媒體元素，例如圖片、音頻和影片，來豐富應用程式的外觀和功能。我學會了處理和操控這些媒體資源，使其能夠在應用程式中無縫運作。這讓我能夠創造出引人入勝的視覺效果和優質的聲音體驗這中間雖然花了很多時間，但得到的成果卻很喜歡。</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="image">
+                    <img src="image/noel1.jpg" style="height: 450px; width: 280px;">
+                </div>
+                <div class="overlay">
+                    <div class="name">温啟詮<br>在這學期中，我們主要負責的是前端的開發，與上學期的不同，上學期是後端，兩邊各有困難的地方，而這學期交換之後，兩邊應該也會對彼此需要的更熟悉。我覺得期末專題很有趣，考驗到CSS與JS的熟練度，以及對美感的體現，也考驗團隊合作，因為期中專案是個人的，所以這次的團隊合作讓做期末專題也稍微有點挑戰，也要分工，然後再將各自負責的程式碼做一個彙整，所以這是一個極具挑戰但也有趣的專題。</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="image">
+                    <img src="image/chi.jpg" style="height: 450px; width: 300px;">
+                </div>
+                <div class="overlay">
+                    <div class="name">蔡文旗<br>這次的期末專案我擔任的是網站前端設計，我覺得遇到比較大的困難是會有很多的突發狀況需要去排解，像是首頁要轉很久，但後來發現要透過F12隨時去看程式碼有沒有問題，再來想要讓網站看起來很整齊，就要花很多時間去修改CSS，而且在不同大小螢幕顯示下會嚴重跑版，但最後至少完成品不會跑得太嚴重，再來就是JS，這裡就比較考驗邏輯思考，要去網路上查語法，再想辦法套用在自己網站上，總之在這次的專案中，不管是團隊合作或是專業知識上，我都獲益良多。</div>
+                </div>
+            </div>
+        </div>
+        <div class="cycuim">資管二甲 後端</div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="image">
+                    <img src="image/frank.jpg" style="height: 400px; width: 280px;">
+                </div>
+                <div class="overlay">
+                    <div class="name">李逸奎<br>這學期網路程式設計的課程讓我了解到關於後端資料庫連結JSP的連結以及資料庫的處理，這跟前端大部同的地方在於前端只要將網頁寫出來寫死就好，後端需要連結資料庫將內容導入網頁，以及登入控管這幾項，對我來說這些都是新的挑戰，也讓我理解前端不能把所有網頁全部寫死，都需要跟後端組員好好溝通過得出結論，這學期相較於之前的多媒體，需要花費更多時間來處理，這對我來說是一個很大的挑戰，我相信完成之後會是一個寶貴的經驗，能夠利用實作來增進自己的能力。</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="image">
+                    <img src="image/japan.jpg" style="height: 450px; width: 250px;">
+                </div>
+                <div class="overlay">
+                    <div class="name">中澤祥慧<br>我們需要彼此合作，分享知識，解決問題。我們也要確保網站的安全性和性能，避免潛在的漏洞和錯誤。讓我深入了解了網站開發的過程和技術，也體會到了實際應用的挑戰。通過這個項目，我不僅學到了技術方面的知識，還提升了團隊合作和解決問題的能力。這將對我未來的學習和職業發展帶來很大的幫助。這個項目讓我更加確信網路程式設計是我想要深入探索和學習的領域。我期待著未來的挑戰和成長，並將這次的經驗應用到更多實際的網站開發項目中。這次的經驗讓我更加熱愛網頁開發，並鼓勵我繼續學習和提升自己的技能。</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="image">
+                    <img src="image/chen.jpg" style="height: 450px; width: 270px;">
+                </div>
+                <div class="overlay">
+                    <div class="name">陳秉庭 <br>這次網頁設計我負責的是後端的部分，其中我覺得最大的差別是前端只需要把版面做出來就可以了，不需要考慮其他的問題，而後端則是需要先在版面中寫上程式碼，再連接到資料庫中，多了需要連接到資料庫的動作，需要注意的地方就變得更多，這也是我覺得我在後端遇到最大的挑戰，同時這次後端的製作也讓我發覺了自己許多的不足，因此在之後我也會繼續努力的學習後端的相關知識，努力增進自己網頁設計的能力。</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </article>
+    <div class="clear-fix"></div>
+    <footer>
+        Copyright ©2023 Playtopia.<br>
+    </footer>
+</body>

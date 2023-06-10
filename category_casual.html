@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Playtopia</title>
+    <link rel="icon" href="image/image.png"  type="/image/png">
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+
+<video autoplay>
+  <source src="video/Among Us.mp4 " type="video/mp4">
+</video>
+<main>
+    <section class="first" style="  background-image: url('image/14bg.jpg');">
+        <div class="shooting">休閒</div>
+        <div class="array">
+          <div class="item">
+            <img src="image/11main.jpg" alt="Slide 1" style="height: 230px; width: 350px;">
+            <div class="image-info">《Among us》</div><br>
+            <input type="button" value="進入遊戲" name="按鈕名稱" style="width:120px;height:50px;"  onclick="location.href='game11.html' ">
+          </div>
+          <div class="item">
+            <img src="image/12main.jpg" alt="Slide 1" style="height: 230px; width: 350px;">
+            <div class="image-info">《Overcooked! 2》</div><br>
+            <input type="button" value="進入遊戲" name="按鈕名稱" style="width:120px;height:50px;" onclick="location.href='game12.html' ">
+          </div>
+          <div class="item">
+            <img src="image/13main.jpg "alt="Slide 1" style="height: 230px; width: 350px;">
+            <div class="image-info">《Super Bunny Man》</div><br>
+            <input type="button" value="進入遊戲" name="按鈕名稱" style="width:120px;height:50px;" onclick="location.href='game13.html' ">
+          </div>
+        </div>
+        <div class="array2">
+          <div class="item">
+            <img src="image/14main.jpg" alt="Slide 1" style="height: 230px; width: 350px;">
+            <div class="image-info">《Moving Out》</div><br>
+            <input type="button" value="進入遊戲" name="按鈕名稱" style="width:120px;height:50px;" onclick="location.href='game14.html' ">
+          </div>
+          <div class="item">
+            <img src="image/15main.jpg "alt="Slide 1" style="height: 230px; width: 350px;">
+            <div class="image-info">《雀魂麻將(MahjongSoul)》</div><br>
+            <input type="button" value="進入遊戲" name="按鈕名稱" style="width:120px;height:50px;" onclick="location.href='game15.html' ">
+          </div>
+          <div class="item">
+            <img src="image/16main.jpg" alt="Slide 1" style="height: 230px; width: 350px;">
+            <div class="image-info">《THE SIMS™ 4》</div><br>
+            <input type="button" value="進入遊戲" name="按鈕名稱" style="width:120px;height:50px;" onclick="location.href='game16.html' ">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h5>Copyrgiht @ Playtopia 2023 All rights reserved</h5>
+    </footer>
+  </body>
+  </html>
+  
+  

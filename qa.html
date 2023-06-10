@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="assets/css/qa.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+
+    <main>
+        <div class="panel-group" id="qa-top">
+            <input type="radio" name="panel-radio" id="radio4" class="panel-control" checked>
+            <input type="radio" name="panel-radio" id="radio5" class="panel-control">
+            <input type="radio" name="panel-radio" id="radio6" class="panel-control">
+            <input type="radio" name="panel-radio" id="radio7" class="panel-control">
+            <div class="tab-group">
+              <label for="radio4" class="active">帳號問題</label>
+              <label for="radio5">訂購問題</label>
+              <label for="radio6">遊戲問題</label>
+              <label for="radio7">其他問題</label>
+            </div>
+            <div class="content-group">
+              <div class="content content4">
+                <h2>Q1、我一定要成為會員，才能在Playtopia購買遊戲嗎？</h2><br>
+                <p>是的，為了保障您的權益，需要成為會員才能在Playtopia購買遊戲，此外，成為會員才能享有購物行銷活動等優惠哦！</p><br><br> 
+
+                <h2>Q2、如何註冊為會員？</h2><br>
+                <p>您可透過手機門號註冊，依頁面指示完成資料填寫，即可建立您的個人帳號。</p><br><br>
+
+                <h2>Q3、如果沒有手機門號，是否就無法註冊會員?</h2><br>
+                <p>為保障用戶權益及平台安全與方便您找尋購物訂單，需要進行手機門號認證後完成會員註冊</p><br><br>
+
+                <h2>Q4、可以解除帳號已綁定的手機門號嗎?</h2><br>
+                <p>手機門號經綁定後無法自行解除，但您可自行操作進行修改，請至「會員中心」的「個人資料修改」編輯手機門號並進行手機號碼驗證即可。</p><br><br>
+
+                
+              </div>
+              <div class="content content5">
+                <h2>Q1、訂購需要先入會員嗎？</h2><br>
+                <p>若您未曾在Playtopia平台消費購物，請先註冊成為會員，完成後即可快速登入並選購遊戲。</p><br><br>
+
+                <h2>Q2、我多次嘗試購買卻一直失敗， 該怎麼辦？</h2><br>
+                <p>停用或完全移除任何使用中的 IP 代理伺服器或 VPN 軟體，之後重新啟動電腦，再嘗試購買。 <br>
+                    如果您無法完成購物，請與 Playtopia 客服聯繫並提供詳細資訊，包括您的帳戶名稱與您看到的完整錯誤訊息。
+                </p><br><br>
+
+                <h2>Q3、如何查詢我的訂單資料呢？</h2><br>
+                <p>請至本站「會員中心」的「訂單資料」功能，查詢購物資料。</p><br><br>   
+
+                <h2>Q4、為什麼在「訂單資料」專區裡查詢不到我的訂單呢？</h2><br>
+                <p>敬請確認輸入的訂購E-mail及密碼是否正確？！我們常發現訂購和查詢Mail address不同而致使查詢不到。當輸入正確時卻未出現資料...可能為以下三種情況之─：<br>
+                    1.訂購時所填寫的資料有誤或與查詢mail不同<br>
+                    2.未訂購成功<br>
+                    3.非本站訂購
+                </p><br><br>
+
+                
+              </div>
+              <div class="content content6">
+                <h2>Q1、已經完成付款，遊戲就可以使用了嗎？</h2><br>
+                <p>是的，只要您的付款結果顯示成功，就可以透過其他客戶端下載您所購買的遊戲。</p><br><br>
+
+                <h2>Q2、遊戲買錯或不滿意，可以直接退貨或是換購其他遊戲嗎？</h2><br>
+                <p>不行，如果已經購買此遊戲項目，就沒辦法辦理退貨或換購喔!</p><br><br>
+
+                <h2>Q3、我收到訊息要求我更新作業系統，然後才能玩遊戲。我需要什麼版本的Windows?</h2><br>
+                <p>如果您的 Windows 版本是最新版本，您就能玩遊戲。<br>
+                    更新 Windows  <br>
+                    此外，許多遊戲要求您執行 64 位版本的 Windows 10 或更新版本。 如果您是 32 位元版，可能無法玩遊戲。 請查看遊戲製造商的裝置需求，以了解更多資訊。
+                </p><br><br>
+
+                <h2>Q4、硬體需求有哪些?</h2><br>
+                <p>關於硬體需求，請造訪遊戲的產品詳細資料頁面。 建議您在購買遊戲之前先查看裝置規格，以確認裝置是否符合最低需求。</p><br><br>
+
+                
+              </div>
+              <div class="content content7">
+                <h2>Q1、如何與顧客中心聯絡？</h2><br>
+                <p>訂單如有訂購、付款、發票、運送、商品等問題，在常見問題Q&A中仍無法為您解答，至本站「會員中心」透過「問問題」功能留言，我們將在1-2個工作天內 (不含週六日)確認結果後，儘速回覆在帳戶中「問答紀錄」，並隨後寄發一封Email或是電話通知。</p><br><br>
+
+                <h2>Q2、是否需要上線或是連線至網際網路才能玩遊戲?</h2><br>
+                <p>如果您打算前往沒有網路覆蓋的區域，可以預先做好讓您能夠在 Windows 裝置上離線玩大部分遊戲的準備。<br>
+                    如果您以離線方式進行遊戲，部分功能將無法使用，例如排行榜、從Playtopia購買其他項目。</p><br><br>
+
+                <h2>Q3、我可以在多少裝置安裝我的遊戲</h2><br>
+                <p>使用 Windows 時，您可以在您的主要裝置 (通常為安裝遊戲的第一台裝置) 上安裝您的遊戲並離線進行遊戲，也可以安裝在多部裝置上。</p><br><br>
+
+                <h2>Q4、我可以享有哪些產品的 9 折*優惠？</h2><br>
+                <p>在 Playtopia 上購買的部分數位內容，包括完整版遊戲、季票和 DLC，都可享受超值優惠。</p><br><br>
+
+                
+              </div>
+            </div>
+        </div>
+    </main>
+    <div class="clear-fix"></div>
+    <footer>
+        <div class="contact" id="contact">
+            Copyright ©2023 Playtopia.
+        </div>
+    </footer>
+</body>
+</html>

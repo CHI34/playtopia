@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/member.css">
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+    <script src="4.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+    <main>
+        <div class="member-info">
+            <h2>會員資料</h2>
+        </div>
+        <div class="panel-group">
+            <input type="radio" name="panel-radio" id="radio1" class="panel-control" checked>
+            <input type="radio" name="panel-radio" id="radio2" class="panel-control">
+            <input type="radio" name="panel-radio" id="radio3" class="panel-control">
+            <div class="tab-group">
+              <label for="radio1" class="active">修改個人資料</label>
+              <label for="radio2">評論紀錄</label>
+              <label for="radio3">購買紀錄</label>
+            </div>
+            <div class="content-group">
+              <div class="content content1">
+                <div class="member-box" id="memberBox">
+                    <h2>修改資料</h2>
+                    <form method="post" id="reset">
+                        <div class="user-box">
+                            <input type="text" name="Username" required="">
+                            <label>Username</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="Password" required="">
+                            <label>Password</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="Password_Again" required="">
+                            <label>Password Again</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="Name" required="">
+                            <label>Name</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="tel" name="Tel" required="">
+                            <label>Tel</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="Email" required="">
+                            <label>Email</label>
+                        </div>
+                        <div class="user-box">
+                            <select type="sex" name="Sex" required="" placeholder="Sex">
+                            <label>Sex</label>
+                            <option value="" disabled selected hidden>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="user-box">
+                            <input type="date" name="Birth" id="" >
+                            <label>Birth</label>
+                        </div>
+                        <div class="submit-flex" id="submit-flex">
+                        <button class="submit-btn">修改</button>
+                        <input class="submit-btn" type="button" onclick="formReset()" value="重置">
+                        </div>
+                    </form>
+        
+                  </div>
+              </div>
+              <div class="content content2">
+                  <section class="board">
+                    <div class="account-pic">
+                      <img src="/jpg/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+                    </div>
+                    <div class="account-info">
+                     <div class="account-id">iamakid39</div>
+                     <div class="stars2">
+                           <span class="star2">&#9733</span>
+                           <span class="star2">&#9733</span>
+                           <span class="star2">&#9733</span>
+                           <span class="star2">&#9733</span>
+                           <span class="star2">&#9733</span>
+                     </div>
+                    </div>
+                    <div class="posted">好玩!</div>
+                  </section>
+                  <section class="board">
+                      <div class="account-pic">
+                        <img src="/jpg/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+                      </div>
+                      <div class="account-info">
+                      <div class="account-id">Noelsdog</div>
+                      <div class="stars2">
+                            <span class="star2">&#9733</span>
+                            <span class="star2">&#9733</span>
+                            <span class="star2">&#9733</span>
+                            <span class="star2">&#9733</span>
+                            <span class="star2"></span>
+                      </div>
+                      </div>
+                      <div class="posted">還行</div>
+                  </section>
+                  <section class="board">
+                      <div class="account-pic">
+                        <img src="/jpg/head.jpg" alt="Slide 1" style="height: 200px; width: 200px;">
+                      </div>
+                      <div class="account-info">
+                      <div class="account-id">dachi</div>
+                      <div class="stars2">
+                            <span class="star2">&#9733</span>
+                            <span class="star2"></span>
+                            <span class="star2"></span>
+                            <span class="star2"></span>
+                            <span class="star2"></span>
+                      </div>
+                      </div>
+                      <div class="posted">瓦羅蘭比較好玩</div>
+                  </section>
+              </div>
+        
+              <div class="content content3">content3</div>
+            </div>
+        </div>
+    </main>
+    <div class="clear-fix"></div>
+    <footer>
+        Copyright ©2023 Playtopia.<br>
+    </footer>
+</body>
+</html>

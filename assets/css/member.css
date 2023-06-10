@@ -1,0 +1,205 @@
+main {
+    height: 1200px;
+}
+
+.panel-control {
+    position: absolute;
+    opacity: 0;
+}
+
+.panel-group {
+    margin-top: 50px;
+}
+
+.tab-group {
+    text-align: center;
+}
+
+.tab-group label {
+    display: inline-block;
+    padding: 10px 30px;
+    border-bottom: none;
+    background-color: #ccc;
+    bottom: -1px;
+    position: relative;
+    border-radius: 10px
+}
+
+.content-group {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+
+#radio1:checked~.tab-group [for="radio1"],
+#radio2:checked~.tab-group [for="radio2"],
+#radio3:checked~.tab-group [for="radio3"] {
+    background-color: #fff;
+}
+
+
+#radio1:checked~.content-group .content1,
+#radio2:checked~.content-group .content2,
+#radio3:checked~.content-group .content3 {
+    display: block
+}
+
+.member-info {
+    color: #656565;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.member-box {
+    margin: 50px auto;
+    width: 600px;
+    padding: 40px;
+    background: #d5d5d5;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.member-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #656565;
+    text-align: center;
+}
+
+.member-box .user-box {
+    position: relative;
+}
+
+.member-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #656565;
+    outline: none;
+    background: transparent;
+}
+
+.member-box .user-box input:focus~label,
+.member-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #656565;
+    font-size: 12px;
+}
+
+.member-box .user-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #656565;
+    outline: none;
+    background: transparent;
+}
+
+.member-box .user-box option {
+    background-color: #d5d5d5;
+}
+
+.member-box .user-box select:focus~label,
+.member-box .user-box select:valid~label {
+    top: -20px;
+    left: 0;
+    color: #656565;
+    font-size: 12px;
+}
+
+.member-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.submit-flex {
+    display: flex;
+}
+
+.submit-btn {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(256, 256, 256, 0.7);
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    padding: 15px 45px;
+    width: 40%;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.submit-btn:hover {
+    transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.board {
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.account-pic {
+    margin-left: 10%;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-id {
+    margin-left: 5%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.stars2 {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.star2 {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: gold;
+    margin-right: 5px;
+}
+
+.posted {
+    margin-left: 3%;
+    width: 800px;
+    height: 200px;
+    border: rgb(27, 71, 167) 3px solid;
+    background-color: #a4ebee;
+}
+
+.content-content3 {
+    height: 1000px;
+}

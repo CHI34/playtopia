@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/final.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/check.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/148425472e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src=image/logo.png loading="lazy" style="height: 102px;width: 416px;"></a></div>
+        <ul class="drop-down-menu">
+            <li><a href="aboutus.html">關於我們</a>
+            </li>
+            <li><a href="#">客服中心</a>
+                <ul>
+                    <li><a href="qa.html">問題Q&A</a>
+                    </li>
+                    <li><a href="report.html">問題回報</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">全部遊戲
+                <ul>
+                    <li><a href="category_shoot.html">射擊</a>
+                    </li>
+                    <li><a href="category_casual.html">休閒</a>
+                    </li>
+                    <li><a href="category_adventure.html">動作冒險</a>
+                    </li>
+                </ul>
+            </a>
+            </li>
+            <li><a href="#">會員中心</a>
+                <ul>
+                    <li><a href="member.html">會員資料</a>
+                    </li>
+                    <li><a href="gift.html">贈禮中心</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="尋找你想玩的遊戲">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                </button>
+                <button type="submit" class="cartButton" onclick="location.href='cart.html'">
+                     <i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="adjust">
+            <button id="loginButton">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button id="registerButton">
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class="login-box" id="loginBox">
+            <h2>Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="Username" >
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" >
+                    <label>Password</label>
+                </div>
+                <div class="logbutton">
+                    <button class="submit-btn">Log in</button>
+                    <button class="submit-btn" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="register-box" id="registerBox">
+                <h2>Register</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="text" name="Username" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password" required="">
+                        <label>Password</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="Password_Again" required="">
+                        <label>Password Again</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Name" required="">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" name="Tel" required="">
+                        <label>Tel</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="Email" required="">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <select type="sex" name="Sex" required="" placeholder="Sex">
+                        <label>Sex</label>
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="user-box">
+                        <input type="date" name="Birth" id="" >
+                        <label>Birth</label>
+                    </div>
+                    <div class="logbutton">
+                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" id="cancelButton2">Cancel</button>
+                    </div>
+                </form>        
+            </div>
+            <script src="js/1.js"></script>
+        </div>
+    </header>
+    <main style=" background-image: url('/image/14bg.jpg'); height: 890px;">
+        <div class="bill-container"><br>
+            <div class="bill-box">
+                <form method="post">
+                    <h3 class="payment-tytle" >付款資訊</h3>
+                    <label for="number">信用卡卡號</label>
+                    <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number">
+    
+                    <label for="name">信用卡姓名</label>
+                    <input placeholder="Full Name" type="text" name="name"><br>
+    
+                    <div class="cardForm-Field50">
+                        <label for="expiry">有效期限</label><rb>
+                        <input placeholder="MM/YY" type="text" name="expiry" class="secondRow">
+                    </div>
+                    <div class="cardForm-Field50">
+                        <label for="cvc">安全碼</label><br>
+                        <input placeholder="XXX" type="text" name="cvc" class="secondRow incorrectInfo">
+                    </div>
+                    <h3 class="bill-tytle" >帳單資訊</h3>
+                    <div class="billForm-Field50">
+                        <label for="name">姓名</label>
+                        <input placeholder="Full Name" type="text" name="name">
+                    </div>
+    
+                    <div class="billForm-Field50">
+                        <label for="Tel">電話</label>
+                        <input placeholder="09xxxxxxxx" type="tel" name="Tel">
+                    </div>
+    
+                    <div class="billForm-Field50">
+                        <label for="city">城市</label><rb>
+                        <input placeholder="Taipei" type="text" name="city">
+                    </div>
+                    <div class="billForm-Field50">
+                        <label for="zip">郵遞區號</label><br>
+                        <input placeholder="320" type="text" name="zip">
+                    </div>
+                    <label for="address">地址</label>
+                    <input placeholder="桃園市中壢區中北路200號" type="text" name="address">
+                    <button class="submit-btn">完成</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="clear-fix"></div>
+    <footer>
+        Copyright ©2023 Playtopia.<br>
+    </footer>
+</body>
+</html>

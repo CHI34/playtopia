@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'DotGothic16', sans-serif;
+
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.clear-fix {
+    clear: both;
+}
+
+body {
+    background-color: #eef8ff;
+}
+
+header {
+    background-color: #d5d5d5;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+footer {
+    background-color: #d5d5d5;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+.logo {
+    justify-content: flex-start;
+}
+
+/* 功能欄 */
+ul {
+    /* 取消ul預設的內縮及樣式 */
+
+    padding: 0;
+    list-style: none;
+
+}
+
+ul.drop-down-menu {
+
+    display: inline-block;
+
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+    border-right: black 3px solid;
+}
+
+
+ul.drop-down-menu>li:last-child {
+    border-right: none;
+}
+
+ul.drop-down-menu>li {
+    float: left;
+    /* 只有第一層是靠左對齊*/
+}
+
+ul.drop-down-menu a {
+    background-color: #d5d5d5;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+ul.drop-down-menu a:hover {
+    /* 滑鼠滑入按鈕變色*/
+    background-color: #656565;
+    color: #fff;
+}
+
+ul.drop-down-menu li:hover>a {
+    /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #656565;
+    color: #fff;
+}
+
+ul.drop-down-menu ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 180px;
+}
+
+ul.drop-down-menu ul li {
+    border-bottom: #ccc 1px solid;
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+ul.drop-down-menu ul {
+    /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover>ul {
+    /*滑鼠滑入展開次選單*/
+    display: block;
+}
+
+
+
+/*搜尋欄 購物車 登入*/
+.wrap {
+    width: 30%;
+    position: absolute;
+    margin-left: 1350px;
+}
+
+.wrap .search {
+    width: 60%;
+    position: relative;
+    display: flex;
+}
+
+.wrap .searchTerm {
+    width: 100%;
+    border: 3px solid #656565;
+    border-right: none;
+    padding: 5px;
+    height: 45px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.wrap .searchButton {
+    width: 40px;
+    height: 45px;
+    border: 1px solid #656565;
+    background: #656565;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap .cartButton {
+    width: 53px;
+    height: 45px;
+    border: 1px solid #656565;
+    background: #656565;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/*登入*/
+.adjust {
+    z-index: 9999;
+    margin-left: 600px;
+    display: flex;
+}
+
+.adjust2 {
+    z-index: 1;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+#loginButton {
+    top: 50%;
+    width: 40px;
+    height: 45px;
+    border: 1px solid #656565;
+    background: #656565;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+.login-box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #d5d5d5;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #656565;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #656565;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #656565;
+    font-size: 12px;
+}
+
+.submit-btn {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(256, 256, 256, 0.7);
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    padding: 15px 45px;
+    width: 40%;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.submit-btn:hover {
+    transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logbutton {
+    display: flex;
+}
+
+/*註冊*/
+#registerButton {
+    top: 50%;
+    width: 40px;
+    height: 45px;
+    border: 1px solid #656565;
+    background: #656565;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.register-box {
+    display: none;
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #d5d5d5;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.register-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #656565;
+    text-align: center;
+}
+
+.register-box .user-box {
+    position: relative;
+}
+
+.register-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #656565;
+    outline: none;
+    background: transparent;
+}
+
+.register-box .user-box input:focus~label,
+.register-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #656565;
+    font-size: 12px;
+}
+
+.register-box .user-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: serif;
+    color: #656565;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #656565;
+    outline: none;
+    background: transparent;
+}
+
+.register-box .user-box option {
+    background-color: #d5d5d5;
+}
+
+.register-box .user-box select:focus~label,
+.register-box .user-box select:valid~label {
+    top: -20px;
+    left: 0;
+    color: #656565;
+    font-size: 12px;
+}
+
+.register-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #656565;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.submit-btn:hover {
+    transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*幻燈片*/
+main {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* 调整幻灯片的高度 */
+    overflow: hidden;
+    z-index: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+/*商品*/
+.first {
+    padding-top: 2%;
+    font-size: 30px;
+
+}
+
+.array {
+    height: 250px;
+    margin-left: 25%;
+
+    margin-top: 20px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: 5px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.caption a {
+    text-decoration: none;
+    color: white;
+}
+
+.item:hover .caption {
+    opacity: 1;
+}
+
+.caption:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.image-info {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 20px;
+    color: black;
+}
+
+/*midpage*/
+.midpage button:hover {
+    transform: scale(1.3);
+}
+
+.midpage {
+    background-color: lightskyblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.midpage2 {
+    padding: 50px;
+}
+
+.midpageButton {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: 1px solid #fff;
+    background: #fff;
+    text-align: center;
+    color: #656565;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.midfont {
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/*廣告優惠欄*/
+.adv {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 700px 100px 600px;
+    grid-template-columns: 30% 20% 25% 25%;
+    font-weight: bolder;
+
+}
+
+.ad1 {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    position: relative;
+}
+
+.ad2_1 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.ad2_2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.ad3_1 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.ad3_2 {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    background-color: lightgray;
+
+}
+
+.ad4 {
+    grid-row: 2/4;
+    grid-column: 3/5;
+    position: relative;
+}
+
+.ad_a1 {
+    font-size: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.ad_a2 {
+    padding: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.ad_a3 {
+    padding: 20px;
+}
+
+.adv a {
+    text-decoration: none;
+}
+
+.ad_font {
+    position: absolute;
+    top: 10%;
+    z-index: 1;
+}
+
+.adv input {
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    background-color: rgb(5, 5, 5);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.adv input:hover {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    background-color: #fff;
+    border: 2px red solid;
+}
